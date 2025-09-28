@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({left: '450px'});
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#second").click(function(){
+                $("div").animate({
+                    height: 'toggle'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Start Animation</button>
+    <p>A simple Animation Example:</p>
+        <div style="background-color: blue; height: 50px; width: 50px; position: absolute;"></div><br>
+        <button id="second">Toggle Animation</button>
+        <div style="background-color: red; height: 100px; width: 100px; position: absolute;"></div>
+</body>
+</html>

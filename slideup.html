@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown(5000);
+            });
+        });
+    </script>
+    <style>
+        #panel, #flip{
+            padding: 5px;
+            text-align: center;
+            background-color: #6be560;
+            border: 1px solid #f2db0a;
+        }
+        #panel{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="flip">Click to slide up panel</div>
+    <div id="panel">My name is babbu maan</div>
+</body>
+</html>

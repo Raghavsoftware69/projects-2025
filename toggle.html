@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("div").hide();
+            });
+            $("#show").click(function(){
+                $("div").show();
+            });
+            $("#toggle").click(function(){
+                $("div").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="border: 20px red solid; width: 100px; height: 100px; background-color: red;">
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    </div>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+</body>
+</html>
